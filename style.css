@@ -1,0 +1,211 @@
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background-image: url(Imagenes/portada.png);
+    background-size: 100% 100%;
+}
+.header{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+.header img{
+    width: 240px;
+    margin: 0 0 110px 65px;
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #c5078c;
+    text-decoration: underline;
+}
+
+main{
+    background: linear-gradient(#f7bbe7,#B27362);
+}
+.principal{
+    padding: 3em 0;
+    width: 940px;
+    margin: 0 auto;
+}
+.title-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.map{
+    padding: 3em 0;
+}
+.map-content{
+    width: 940px;
+    margin: 0 auto;
+}
+.map p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    background-color: #B27362;
+    padding: 40px;
+}
+footer img{
+    width: 140px;
+}
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+}
+
+/*CSS products*/
+.products{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.products ul{
+    text-align: center;
+}
+
+.products li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 1.5% 1.5%;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.product-img{
+    width: 240px;
+}
+.products li:hover{
+    border-color: #c78c19;
+}
+.products li:active{
+    border-color: #088c19;
+}
+.products h2{
+    font-size: 25px;
+    font-weight: bold;
+}
+.products .grande{
+    font-size: 21px;
+    font-weight: bold;
+}
+.products li:hover h2{
+    font-size: 30px;
+}
+.product-price{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/*CSS contact*/
+.contact{
+    width: 940px;
+    margin: 0 25%;
+    padding: 50px;
+}
+.contact-content{
+    width: 940px;
+    margin: 0 auto;
+}
+form{
+    margin: 40px 0;
+}
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.input-format{
+    display: block;
+    width: 55.5%;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+.contact-content .send{
+    text-align: center;
+}
+.send{
+    width: 55.5%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #6b3b2d;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+.send:hover{
+    background: #8f675b;
+    transform: scale(1.2);
+}
+.table-format{
+    text-align: center;
+    margin: 0 30%;
+}
+table{
+    margin: 0 0 0 25%;
+}
+thead{
+    background: #555555;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+th, td{
+    border: 1px solid #000;
+    padding: 8px 15px;
+}
+
+/*CSS para dispositivo movil*/
+@media screen and (max-width: 480px) {
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .header, .principal, .map-content, .products, .contact{
+        width: auto;
+    }
+    .products img, .send{
+        width: 100%;
+    }
+    .products li{
+        width: auto;
+        display: block;
+        margin: 0 0 15px 0;
+    }
+    .input-format{
+        width: 80%;
+    }   
+}
